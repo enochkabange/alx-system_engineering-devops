@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR % '$n' == 0' "$file"
+paste - - | cut -d$'\t' -f1
